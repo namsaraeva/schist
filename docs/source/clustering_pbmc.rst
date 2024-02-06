@@ -56,9 +56,9 @@ However, the *minimization of the description length* could fall into local mini
 
 Pratically, this can be achieved, using ``schist``::
 
-    scs.inference.nested_model(adata, samples=100)
+    scs.inference.nested_model(adata, n_init=100)
     
-The parameter ``samples`` accounts for the number of minimization step performed: the larger the number of rounds, the slower the process. ``samples`` parameter is set at 100 by default.
+The parameter ``n_init`` accounts for the number of minimization step performed: the larger the number of rounds, the slower the process. ``n_init`` parameter is set at 100 by default.
 
 In order to effectively visualize the nested hierarchy representing the partition, we have implemented the function ``schist.plotting.alluvial()``::
 
